@@ -24,6 +24,10 @@ export interface Project {
     live?: string;
   };
   featured?: boolean;
+  category: string;
+  status: string;
+  highlights: string[];
+  modules?: { name: string; desc: string; href: string }[];
 }
 
 export interface TechStackItem {

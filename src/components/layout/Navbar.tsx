@@ -10,7 +10,7 @@ export function Navbar() {
   const activeId = useActiveSection(NAV_ITEMS.map((item) => item.id));
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-border/60 bg-background/70 backdrop-blur-md">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-border/60 bg-background/40 backdrop-blur-xl">
       <Container className="flex h-16 items-center justify-between">
         <a
           href="#"

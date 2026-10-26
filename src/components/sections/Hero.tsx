@@ -4,6 +4,7 @@ import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { AmbientGlow } from "@/components/ui/AmbientGlow";
 import { TerminalHero } from "./TerminalHero";
+import { ParticleNetwork } from "@/components/ui/ParticleNetwork";
 
 const container = {
   hidden: { opacity: 0 },
@@ -29,17 +30,19 @@ export function Hero() {
       className="relative flex min-h-screen items-center overflow-hidden pt-16"
       aria-label="Introduction"
     >
+      <ParticleNetwork />
       <AmbientGlow />
 
       <div className="grid w-full items-center gap-16 lg:grid-cols-[1.1fr_0.9fr]">
         <motion.div variants={container} initial="hidden" animate="show">
-          <motion.p variants={item} className="mb-6 text-sm text-muted">
-            Computer Engineering Student · CPE67, KMUTT
+          <motion.p variants={item} className="glass mb-6 inline-flex items-center gap-2 rounded-full px-4 py-1.5 font-mono text-xs text-muted">
+            <span className="pulse-dot h-2 w-2 rounded-full bg-accent-bright" />
+            Open for internships · CPE40 · KMUTT67
           </motion.p>
 
           <motion.h1
             variants={item}
-            className="glow-text text-balance text-4xl font-semibold tracking-tight text-foreground sm:text-5xl md:text-6xl"
+            className="text-gradient text-balance text-4xl font-semibold tracking-tight text-foreground sm:text-5xl md:text-6xl"
           >
             Nattawat builds software that thinks in systems.
           </motion.h1>

@@ -8,6 +8,8 @@ export const TECH_STACK: TechStackItem[] = [
   { name: "JavaScript", category: "language" },
   { name: "HTML", category: "language" },
   { name: "CSS", category: "language" },
+  { name: "MQL5", category: "language" },
+  { name: "C++ (Arduino)", category: "language" },
 
   // Frameworks / Libraries
   { name: "React", category: "framework" },
@@ -16,12 +18,20 @@ export const TECH_STACK: TechStackItem[] = [
   { name: "OpenCV", category: "framework" },
   { name: "YOLO", category: "framework" },
   { name: "gTTS", category: "framework" },
+  { name: "Flask", category: "framework" },
+  { name: "Node.js", category: "framework" },
+  { name: "MediaPipe", category: "framework" },
 
   // Tools / Platforms
   { name: "Docker", category: "tool" },
   { name: "Git", category: "tool" },
   { name: "PostgreSQL", category: "tool" },
   { name: "MetaTrader 5", category: "tool" },
+  { name: "ESP32", category: "tool" },
+  { name: "SQLite", category: "tool" },
+  { name: "Ollama", category: "tool" },
+  { name: "Gemini API", category: "tool" },
+  { name: "LINE Messaging API", category: "tool" },
 ];
 
 export const TECH_CATEGORY_LABELS: Record<TechStackItem["category"], string> = {

@@ -5,6 +5,9 @@ import { About } from "@/components/sections/About";
 import { Projects } from "@/components/sections/Projects";
 import { TechStack } from "@/components/sections/TechStack";
 import { Contact } from "@/components/sections/Contact";
+import { Stats } from "@/components/sections/Stats";
+import { CursorGlow } from "@/components/ui/CursorGlow";
+import { ScrollProgress } from "@/components/ui/ScrollProgress";
 import { useLenis } from "@/hooks/useLenis";
 
 function App() {
@@ -12,9 +15,12 @@ function App() {
 
   return (
     <>
+      <ScrollProgress />
+      <CursorGlow />
       <Navbar />
       <main>
         <Hero />
+        <Stats />
         <About />
         <Projects />
         <TechStack />
